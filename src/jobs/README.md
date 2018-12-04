@@ -16,4 +16,3 @@ No cal que copiis aquest exemple, si fas una [nova issue](https://github.com/pyg
 ## Llistat de feines
 
 <JobsIndex/>
-

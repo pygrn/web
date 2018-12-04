@@ -1,3 +1,7 @@
+---
+hidden: true
+---
+
 ### $titol_oferta
 
 - Empresa: [$nom_empresa]($url_empresa)
