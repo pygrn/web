@@ -4,9 +4,9 @@ blog_index: true
 # Feines
 
 
-## Llistat de feines
+## Últimes feines publicades
 
-<JobsIndex/>
+<JobsIndex :limit=3 />
 
 
 ## Vols afegir una nova feina?
