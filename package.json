@@ -22,6 +22,7 @@
   },
   "homepage": "",
   "devDependencies": {
+    "axios": "^0.18.0",
     "vuepress": "^0.14.2"
   },
   "dependencies": {
