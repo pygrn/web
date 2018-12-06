@@ -7,16 +7,21 @@ module.exports = {
         { text: 'Home', link: '/' },
         { text: 'Feines', link: '/jobs/' },
     ],
+    sidebar: {
+      '/jobs/': helpers.utils.genSidebarConfig(
+        'Ofertes de feina',
+        './src/jobs/',
+        true,
+      )
+    }
   },
-  sidebar: [
-    '/',
-    '/blog/'
-  ],
   configureWebpack: {
     resolve: {
       alias: {
         '@src': './src'
       }
     }
-  }
+  },
+  plugins: [
+  ]
 }
