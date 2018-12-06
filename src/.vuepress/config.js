@@ -5,8 +5,8 @@ module.exports = {
   themeConfig: {
     nav: [
         { text: 'Home', link: '/' },
-        { text: 'Jobs', link: '/jobs/' }
-    ]
+        { text: 'Feines', link: '/jobs/' },
+    ],
   },
   sidebar: [
     '/',
