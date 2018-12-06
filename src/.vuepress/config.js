@@ -1,3 +1,5 @@
+const helpers = require('./helpers')
+
 module.exports = {
   title: 'Python Girona',
   themeConfig: {
