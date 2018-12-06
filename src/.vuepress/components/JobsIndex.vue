@@ -10,23 +10,53 @@
         <p><router-link :to="job.path">Més informació</router-link></p>
 
     </div>
+
+    <div v-for="(job, index) in issues['data']" v-if="index < limit">
+      <h2>
+          <router-link :to="job.url">{{ job.title }}</router-link>
+      </h2>
+
+      <p>{{ job.body }}</p>
+
+      <p><router-link :to="job.url">Més informació</router-link></p>
+
+
+      {{job.title}}
+      {{job.user.login}}
+      {{job.url}}
+      {{job.body}}
+    </div>
+
 </div>
 
 </template>
 
 <script>
+const axios = require('axios');
+
 export default {
     name: "JobsIndex",
     data() {
       return {
+        issues: null,
       }
     },
+
     props: {
       limit: {
         type: Number,
         required: false,
         default: 5,
       }
+    },
+
+    mounted() {
+        axios.get('https://api.github.com/repos/pygrn/xerrades/issues', {
+          params: {
+            type: 'all',
+          },
+        })
+        .then(response => (this.issues = response))
     },
 
     computed: {
