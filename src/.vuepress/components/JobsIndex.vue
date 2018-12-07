@@ -13,6 +13,9 @@
 
     <div v-if="issues">
       <div v-for="(job, index) in issues" v-if="index < limit">
+        <h2>
+            <a :href="job.html_url" target="_blank">{{ job.title }}</a>
+        </h2>
 
         <p v-html="markdown(job.body)"></p>
 
