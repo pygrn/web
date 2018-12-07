@@ -34,6 +34,9 @@
 <script>
 const axios = require('axios');
 
+var MarkdownIt = require('markdown-it'),
+    md = new MarkdownIt();
+
 export default {
     name: "JobsIndex",
     data() {
