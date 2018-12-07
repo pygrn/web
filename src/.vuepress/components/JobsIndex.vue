@@ -11,20 +11,13 @@
 
     </div>
 
-    <div v-for="(job, index) in issues['data']" v-if="index < limit">
-      <h2>
-          <router-link :to="job.url">{{ job.title }}</router-link>
-      </h2>
+    <div v-if="issues">
+      <div v-for="(job, index) in issues" v-if="index < limit">
 
-      <p>{{ job.body }}</p>
+        <p v-html="markdown(job.body)"></p>
 
-      <p><router-link :to="job.url">Més informació</router-link></p>
-
-
-      {{job.title}}
-      {{job.user.login}}
-      {{job.url}}
-      {{job.body}}
+        <p><router-link :to="job.url">Més informació</router-link></p>
+      </div>
     </div>
 
 </div>
