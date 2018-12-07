@@ -51,7 +51,10 @@ export default {
     },
 
     mounted() {
-        axios.get('https://api.github.com/repos/pygrn/xerrades/issues', {
+        const organization = "pygrn";
+        const repo = "xerrades";
+
+        axios.get(`https://api.github.com/repos/${organization}/${repo}/issues`, {
           params: {
             type: 'all',
           },
