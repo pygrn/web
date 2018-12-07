@@ -63,6 +63,10 @@ export default {
           },
         })
         .then(response => (this.issues = response))
+    methods: {
+      markdown: function (content) {
+        return md.render(content);
+      }
     },
 
     computed: {
