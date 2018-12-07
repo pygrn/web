@@ -62,7 +62,14 @@ export default {
             type: 'all',
           },
         })
-        .then(response => (this.issues = response))
+        .then(response => {
+          this.issues = response["data"];
+        })
+        .catch(error => {
+          console.log("Error fetching repo", error);
+        });
+    },
+
     methods: {
       markdown: function (content) {
         return md.render(content);
@@ -74,7 +81,7 @@ export default {
             return this.$site.pages
                 .filter(x => x.path.startsWith('/jobs/') && !x.frontmatter.blog_index && !x.frontmatter.hidden)
                 .sort((a, b) => new Date(b.frontmatter.date) - new Date(a.frontmatter.date));
-        }
+        },
     },
 }
 </script>
