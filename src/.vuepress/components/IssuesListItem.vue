@@ -1,9 +1,9 @@
 <template>
 
 <div class="issues-list-entry">
-  <h3 @click="toggleVisibility()">
-      <a>{{visibilitySymbol()}} {{index && "#" + index}} {{title}}</a>
-  </h3>
+  <h4 @click="toggleVisibility()">
+      <a>{{visibilitySymbol()}} {{index && "#" + index + ")"}} {{title}}</a>
+  </h4>
 
   <div class="issues-list-entry-collapsable" v-show="visible">
     <p v-html="markdown(body)"></p>
