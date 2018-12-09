@@ -7,6 +7,7 @@ is_index: true
 
 <IssuesList
   :limit=0
+  emptyMessage="No s'ha trobat cap proposta pendent"
   v-bind:github="{organization:'pygrn', repo:'xerrades', params:{state: 'open'}}"
 />
 
@@ -14,6 +15,7 @@ is_index: true
 
 <IssuesList
   :limit=0
+  emptyMessage="No s'ha trobat cap proposta tancada"
   v-bind:github="{organization:'pygrn', repo:'xerrades', params:{state: 'closed'}}"
 />
 
