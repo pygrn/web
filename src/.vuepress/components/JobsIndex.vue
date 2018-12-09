@@ -1,6 +1,6 @@
 <template>
 <div>
-  <div v-if="jobs">
+  <div v-if="jobs && jobs.length">
     <div v-for="(job, index) in jobs" v-if="index < limit">
       <h2>
           <router-link :to="job.path">{{ job.frontmatter.title }}</router-link>
@@ -10,6 +10,9 @@
 
       <p><router-link :to="job.path">Més informació</router-link></p>
     </div>
+  </div>
+  <div v-if="!jobs || jobs.length == 0">
+    <p>No hi ha cap procés de selecció obert</p>
   </div>
 </div>
 
