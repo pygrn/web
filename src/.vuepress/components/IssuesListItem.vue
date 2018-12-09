@@ -5,9 +5,8 @@
       <a>{{visibilitySymbol()}} {{ title }}</a>
   </h3>
 
-  <div class="collapsed" v-show="visible">
+  <div class="issues-list-entry-collapsable" v-show="visible">
     <p v-html="markdown(body)"></p>
-
     <p><a target="_blank" :href="html_url">Més informació</a></p>
   </div>
 </div>
@@ -63,5 +62,13 @@ export default {
 
 
 <style>
-
+.issues-list-entry-collapsable {
+  border-radius: 15px;
+  padding-top: 1px;
+  padding-bottom: 1px;
+  padding-left: 25px;
+  padding-right: 25px;
+  background-color: white;
+  margin-bottom: 50px;
+}
 </style>
