@@ -75,7 +75,7 @@ export default {
     computed: {
         jobs() {
             return this.$site.pages
-                .filter(x => x.path.startsWith('/jobs/') && !x.frontmatter.blog_index && !x.frontmatter.hidden)
+                .filter(x => x.path.startsWith('/jobs/') && !x.frontmatter.is_index && !x.frontmatter.hidden)
                 .sort((a, b) => new Date(b.frontmatter.date) - new Date(a.frontmatter.date));
         },
     },

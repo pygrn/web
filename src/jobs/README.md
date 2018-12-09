@@ -1,13 +1,11 @@
 ---
-blog_index: true
+is_index: true
 ---
 # Feines
-
 
 ## Últimes feines publicades
 
 <JobsIndex :limit=3 />
-
 
 ## Vols afegir una nova feina?
 
