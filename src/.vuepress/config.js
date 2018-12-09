@@ -6,9 +6,15 @@ module.exports = {
     nav: [
         { text: 'Home', link: '/' },
         { text: 'Trobades', link: '/meetings/' },
+        { text: 'Propostes', link: '/proposals/' },
         { text: 'Feines', link: '/jobs/' },
     ],
     sidebar: {
+      '/proposals/': helpers.utils.genSidebarConfig(
+        'Propostes',
+        './src/proposals/',
+        true,
+      ),
       '/meetings/': helpers.utils.genSidebarConfig(
         'Trobades',
         './src/meetings/',
