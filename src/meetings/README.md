@@ -1,6 +1,8 @@
 ---
 is_index: true
 ---
-# Trobades
 
-## Últimes trobades
+## Quan?
+
+Ens trobem un cop al mes, normalment **el segon dijous de cada mes**.
+
