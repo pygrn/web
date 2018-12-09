@@ -1,6 +1,6 @@
 <template>
 
-<div>
+<div class="issues-list-entry">
   <h3 @click="toggleVisibility()">
       <a>{{visibilitySymbol()}} {{ title }}</a>
   </h3>
