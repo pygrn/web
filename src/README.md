@@ -1,6 +1,6 @@
 ---
 home: true
-heroImage: /logo.png
+heroImage: /pygi.jpeg
 heroText: Python Girona
 tagline: Som gironins apassionats pel Python i per la tecnologia
 actionText: Més informació →
