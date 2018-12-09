@@ -3,7 +3,7 @@
     <div v-if="issues">
       <IssuesListItem
         v-for="(issue, index) in issues"
-        v-if="!limit || index < limit" v-bind="issue"
+        v-if="!issue.pull_request && (!limit || index < limit)" v-bind="issue"
         :key="issue.id"
       />
     </div>
