@@ -3,6 +3,14 @@ is_index: true
 ---
 # Com ens trobem?
 
+## Què fem?
+
+- Sessió planificada (30-45’)
+- Preguntes/Debat sobre la xerrada (15-30’)
+- Xerrades llamp (*lightning talks*) (5’ màx per xerrada)
+  - Es tracta de mini xerrades informals mig improvisades, sense necessitat de proposar-les amb antelació, ni votar-les prèviament, només una idea i ganes de presentar-la
+- Networking geek amb unes bones *pyzzes* o algo de *pycar*
+
 ## Quan?
 
 Ens trobem un cop al mes, normalment **el segon dijous de cada mes**.
