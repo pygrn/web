@@ -1,11 +1,14 @@
 <template>
 <div>
-    <div v-if="issues">
+    <div v-if="issues && issues.length > 0">
       <IssuesListItem
         v-for="(issue, index) in issues"
         v-if="!issue.pull_request && (!limit || index < limit)" v-bind="issue"
         :key="issue.id"
       />
+    </div>
+    <div v-if="!issues || issues.length == 0">
+      <p>{{emptyMessage}}</p>
     </div>
 </div>
 
@@ -23,6 +26,11 @@ export default {
     },
 
     props: {
+      emptyMessage: {
+        type: String,
+        required: false,
+        default: "No s'han trobat entrades",
+      },
       limit: {
         type: Number,
         required: false,
