@@ -35,27 +35,27 @@ export default {
     },
 
     mounted() {
-        /*
-        Fetch issues at mount time
-        */
-        const {github} = this;
+      /*
+      Fetch issues at mount time
+      */
+      const {github} = this;
+      const githubParams = {
+        // state: 'closed',
+        sort: 'created',
+        direction: 'desc',
+      }
 
-        const githubParams = {
-         // state: 'closed',
-         sort: 'created',
-         direction: 'desc',
-       }
+      axios.get(`https://api.github.com/repos/${github.organization}/${github.repo}/issues`, {
+        params: {...githubParams, ...github.params},
+      })
+      .then(response => {
+        this.issues = response["data"];
 
-        axios.get(`https://api.github.com/repos/${github.organization}/${github.repo}/issues`, {
-          params: {...githubParams, ...github.params},
-        })
-        .then(response => {
-          this.issues = response["data"];
-          console.log(this.issues);
-        })
-        .catch(error => {
-          console.log(`Error fetching repo ${github}`, error);
-        });
+        console.log(this.issues);
+      })
+      .catch(error => {
+        console.log(`Error fetching repo ${github}`, error);
+      });
     },
 }
 </script>
