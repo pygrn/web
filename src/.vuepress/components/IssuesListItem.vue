@@ -1,9 +1,9 @@
 <template>
 
 <div>
-  <h2 @click="toggleVisibility()">
+  <h3 @click="toggleVisibility()">
       <a>{{visibilitySymbol()}} {{ title }}</a>
-  </h2>
+  </h3>
 
   <div class="collapsed" v-show="visible">
     <p v-html="markdown(body)"></p>
