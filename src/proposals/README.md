@@ -23,6 +23,16 @@ Només cal que preparis una [nova issue](https://github.com/pygrn/xerrades/issue
 No cal que copiïs aquest exemple, si fas una [nova issue](https://github.com/pygrn/xerrades/issues/new) se't carregarà per defecte aquesta plantilla
 :::
 
+## Com votar una proposta?
+
+Les votacions les fem interactuant amb la propia issue.
+
+Concretament fem una reacció `+1` al missatge base de la isse:
+
+![Com votar?](./vote.gif#rounded)
+
+[Més informació](https://blog.github.com/2016-03-10-add-reactions-to-pull-requests-issues-and-comments/)
+
 ## Últimes propostes publicades
 
 <IssuesList
