@@ -1,7 +1,7 @@
 <template>
 <div>
     <div v-if="issues">
-      <IssuesListItem v-for="(issue, index) in issues" v-if="index < limit" v-bind="issue"/>
+      <IssuesListItem v-for="(issue, index) in issues" v-if="!limit || index < limit" v-bind="issue"/>
     </div>
 </div>
 
