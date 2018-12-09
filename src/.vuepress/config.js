@@ -5,7 +5,7 @@ module.exports = {
   base: '/web/',
   themeConfig: {
     nav: [
-        { text: 'Home', link: '/' },
+        { text: 'Inici', link: '/' },
         { text: 'Trobades', link: '/meetings/' },
         { text: 'Propostes', link: '/proposals/' },
         { text: 'Feines', link: '/jobs/' },
