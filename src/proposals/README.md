@@ -10,6 +10,12 @@ is_index: true
   v-bind:github="{organization:'pygrn', repo:'xerrades', params:{state: 'open'}}"
 />
 
+## Propostes tancades
+
+<IssuesList
+  :limit=0
+  v-bind:github="{organization:'pygrn', repo:'xerrades', params:{state: 'closed'}}"
+/>
 
 ## Vols afegir una nova proposta?
 
