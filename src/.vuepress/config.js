@@ -9,6 +9,7 @@ module.exports = {
         { text: 'Trobades', link: '/meetings/' },
         { text: 'Propostes', link: '/proposals/' },
         { text: 'Feines', link: '/jobs/' },
+        { text: 'Contacte', link: '/contact/' },
     ],
     sidebar: {
       '/proposals/': helpers.utils.genSidebarConfig(
