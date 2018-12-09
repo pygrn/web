@@ -23,7 +23,9 @@ is_index: true
 
 Només cal que preparis una [nova issue](https://github.com/pygrn/xerrades/issues/new) mantenint el següent format:
 
-<<<  src/proposals/hidden/template_new_proposal.md
+<FileContent
+  v-bind:github="{organization:'pygrn', repo:'xerrades', path: '.github/ISSUE_TEMPLATE.md'}"
+/>
 
 ::: tip
 No cal que copiïs aquest exemple, si fas una [nova issue](https://github.com/pygrn/xerrades/issues/new) se't carregarà per defecte aquesta plantilla

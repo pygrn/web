@@ -17,7 +17,9 @@ is_index: true
 
 Només cal que preparis una [nova issue](https://github.com/pygrn/feina/issues/new) mantenint el següent format:
 
-<<<  src/jobs/hidden/template_new_job.md
+<FileContent
+  v-bind:github="{organization:'pygrn', repo:'feina', path: '.github/ISSUE_TEMPLATE.md'}"
+/>
 
 ::: tip
 No cal que copiïs aquest exemple, si fas una [nova issue](https://github.com/pygrn/feina/issues/new) se't carregarà per defecte aquesta plantilla
