@@ -7,6 +7,7 @@
 
   <div class="issues-list-entry-collapsable" v-show="visible">
     <p v-html="markdown(body)"></p>
+    <p>Creat el {{created_at_date()}} per <a target="_blank" :href="user.html_url">{{user.login}}</a></p>
     <p><a target="_blank" :href="html_url">Més informació</a></p>
   </div>
 </div>
@@ -36,6 +37,14 @@ export default {
         type: String,
         required: true,
       },
+      created_at: {
+        type: String,
+        required: true,
+      },
+      user: {
+        type: Object,
+        required: true,
+      },
       body: {
         type: String,
         required: true,
@@ -60,7 +69,11 @@ export default {
       },
       visibilitySymbol: function () {
         return !this.visible && symbols.expand || symbols.collapse
-      }
+      },
+      created_at_date: function () {
+        return new Date(this.created_at).toLocaleDateString('es-ES');
+      },
+
     },
 }
 </script>
