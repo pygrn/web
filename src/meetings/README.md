@@ -1,6 +1,7 @@
 ---
 is_index: true
 ---
+# Com ens trobem?
 
 ## Quan?
 
