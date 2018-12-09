@@ -66,14 +66,16 @@ export default {
 </script>
 
 
-<style>
-.issues-list-entry-collapsable {
-  border-radius: 15px;
-  padding-top: 1px;
-  padding-bottom: 1px;
-  padding-left: 25px;
-  padding-right: 25px;
-  background-color: white;
-  margin-bottom: 50px;
-}
+<style lang="stylus">
+@require '~vuepress/lib/default-theme/styles/config'
+
+.issues-list-entry-collapsable
+  border-radius: 15px
+  padding-top: 1px
+  padding-bottom: 1px
+  padding-left: 25px
+  padding-right: 25px
+  background-color: white
+  margin-bottom: 50px
+  border: 1px solid darken($borderColor, 10%)
 </style>
