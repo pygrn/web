@@ -5,7 +5,13 @@ is_index: true
 
 ## Últimes feines publicades
 
-<JobsIndex :limit=3 />
+<!-- <JobsIndex :limit=3 /> -->
+
+<IssuesList
+  :limit=0
+  emptyMessage="No s'ha trobat cap procés de selecció obert"
+  v-bind:github="{organization:'pygrn', repo:'feina', params:{state: 'open'}}"
+/>
 
 ## Vols afegir una nova feina?
 
