@@ -3,6 +3,14 @@ is_index: true
 ---
 # Propostes
 
+Per escollir la temàtica de les trobades la comunitat proposa una sessió (xerrada, taller, formació, debat, ...), i és la pròpia comunitat qui la vota.
+
+Abans de cada data de trobada s'escull la proposta més adient, tenint en compte:
+- l'acceptació (el recompte de vots)
+- el tipus de sessió (`python`, `tech`, ...)
+- el format de la sessió (`xerrada`, `taller`, ...)
+- la temàtica (per evitar repeticions temàtiques innecessaries)
+
 ## Últimes propostes publicades
 
 <IssuesList
