@@ -2,8 +2,10 @@
 <div>
     <div v-if="issues && issues.length > 0">
       <IssuesListItem
-        v-for="(issue, index) in issues"
-        v-if="!issue.pull_request && (!limit || index < limit)" v-bind="issue"
+        v-for="(issue, index) in issues_cleaned"
+        v-if="!limit || index < limit"
+        v-bind="issue"
+        :index="index+1"
         :key="issue.id"
       />
     </div>
@@ -65,5 +67,13 @@ export default {
         console.log(`Error fetching repo ${github}`, error);
       });
     },
+
+    computed: {
+      issues_cleaned() {
+          return this.issues
+              .filter(x => !x.pull_request)
+              // .sort((a, b) => new Date(b.created_at) - new Date(a.created_at));
+      },
+    }
 }
 </script>
