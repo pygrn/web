@@ -2,7 +2,7 @@ const helpers = require('./helpers')
 
 module.exports = {
   title: 'Python Girona',
-  base: './',
+  base: '/web/',
   themeConfig: {
     nav: [
         { text: 'Home', link: '/' },
