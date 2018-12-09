@@ -70,7 +70,7 @@ export default {
 @require '~vuepress/lib/default-theme/styles/config'
 
 .issues-list-entry-collapsable
-  border-radius: 15px
+  border-radius: $borderRadius
   padding-top: 1px
   padding-bottom: 1px
   padding-left: 25px
