@@ -1,16 +1,15 @@
 <template>
+<ul>
+  <li @click="toggleVisibility()" class="issues-list-entry">
+    <a>{{visibilitySymbol()}} {{index && "#" + index + ")"}} {{title}}</a>
 
-<div class="issues-list-entry">
-  <h4 @click="toggleVisibility()">
-      <a>{{visibilitySymbol()}} {{index && "#" + index + ")"}} {{title}}</a>
-  </h4>
-
-  <div class="issues-list-entry-collapsable" v-show="visible">
-    <p v-html="markdown(body)"></p>
-    <p>Creat el {{created_at_date()}} per <a target="_blank" :href="user.html_url">{{user.login}}</a></p>
-    <p><a target="_blank" :href="html_url">Més informació</a></p>
-  </div>
-</div>
+    <div class="issues-list-entry-collapsable" v-show="visible">
+      <p v-html="markdown(body)"></p>
+      <p>Creat el {{created_at_date()}} per <a target="_blank" :href="user.html_url">{{user.login}}</a></p>
+      <p><a target="_blank" :href="html_url">Més informació</a></p>
+    </div>
+  </li>
+</ul>
 
 </template>
 
@@ -86,6 +85,9 @@ export default {
 <style lang="stylus">
 @require '~vuepress/lib/default-theme/styles/config'
 
+li
+  margin-top: 10px
+
 .issues-list-entry-collapsable
   border-radius: $borderRadius
   padding-top: 1px
@@ -93,6 +95,7 @@ export default {
   padding-left: 25px
   padding-right: 25px
   background-color: white
+  margin-top: 10px
   margin-bottom: 50px
   border: 1px solid darken($borderColor, 10%)
 </style>

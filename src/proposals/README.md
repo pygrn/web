@@ -33,7 +33,7 @@ Les votacions les fem interactuant amb la pròpia `issue`.
 
 Concretament fem una reacció `+1` (:+1:) al missatge base de la `issue`:
 
-![Com votar?](./vote.gif#rounded)
+![Com votar?](/web/vote.gif#rounded))
 
 [Més informació](https://blog.github.com/2016-03-10-add-reactions-to-pull-requests-issues-and-comments/)
 
