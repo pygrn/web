@@ -5,14 +5,20 @@ module.exports = {
   themeConfig: {
     nav: [
         { text: 'Home', link: '/' },
+        { text: 'Trobades', link: '/meetings/' },
         { text: 'Feines', link: '/jobs/' },
     ],
     sidebar: {
+      '/meetings/': helpers.utils.genSidebarConfig(
+        'Trobades',
+        './src/meetings/',
+        true,
+      ),
       '/jobs/': helpers.utils.genSidebarConfig(
         'Ofertes de feina',
         './src/jobs/',
         true,
-      )
+      ),
     }
   },
   configureWebpack: {
