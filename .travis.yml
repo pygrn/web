@@ -1,0 +1,21 @@
+language: node_js
+node_js:
+    - "10"
+install:
+    - yarn install
+script:
+    - yarn build
+cache:
+    directories:
+        - "node_modules"
+notifications:
+    email: false
+deploy:
+    provider: pages
+    skip-cleanup: true
+    local_dir: src/.vuepress/dist
+    github-token: $GITHUB_TOKEN
+    repo: pygrn/web
+    keep-history: true
+    on:
+        branch: master
