@@ -5,7 +5,11 @@ is_index: true
 
 ## Últimes propostes publicades
 
-<IssuesList :limit=0 v-bind:github="{organization:'pygrn', repo:'xerrades'}" />
+<IssuesList
+  :limit=0
+  v-bind:github="{organization:'pygrn', repo:'xerrades', params:{state: 'open'}}"
+/>
+
 
 ## Vols afegir una nova proposta?
 
