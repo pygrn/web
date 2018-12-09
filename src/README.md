@@ -7,7 +7,7 @@ actionText: Més informació →
 actionLink: /meetings/
 features:
 - title: Què fem?
-  details: Fem tant tallers com xerrades! Estem centrats en Python i tot el seu ecosistema, però com a bons geeks ens apassiona la tecnologia en general!
+  details: Fem tant tallers com xerrades!
 - title: Quan ens trobem?
   details: Ens trobem un cop al mes, normalment el segon dijous de cada mes
 - title: On ens trobem?
