@@ -2,7 +2,7 @@
 
 <div class="issues-list-entry">
   <h3 @click="toggleVisibility()">
-      <a>{{visibilitySymbol()}} {{ title }}</a>
+      <a>{{visibilitySymbol()}} {{index && "#" + index}} {{title}}</a>
   </h3>
 
   <div class="issues-list-entry-collapsable" v-show="visible">
@@ -57,6 +57,10 @@ export default {
         type: Boolean,
         required: false,
         default: true,
+      },
+      index: {
+        type: Number,
+        required: false,
       },
     },
 
