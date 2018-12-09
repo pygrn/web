@@ -21,10 +21,10 @@ is_index: true
 
 ## Vols afegir una nova proposta?
 
-Només cal que preparis una [nova issue](https://github.com/pygrn/xerrades/issues/new) matenint el següent format:
+Només cal que preparis una [nova issue](https://github.com/pygrn/xerrades/issues/new) mantenint el següent format:
 
 <<<  src/proposals/hidden/template_new_proposal.md
 
 ::: tip
-No cal que copiis aquest exemple, si fas una [nova issue](https://github.com/pygrn/xerrades/issues/new) se't carregarà per defecte aquesta plantilla
+No cal que copiïs aquest exemple, si fas una [nova issue](https://github.com/pygrn/xerrades/issues/new) se't carregarà per defecte aquesta plantilla
 :::
