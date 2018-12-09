@@ -17,6 +17,11 @@
 const MarkdownIt = require('markdown-it'),
       md = new MarkdownIt();
 
+const symbols = {
+  expand: "",
+  collapse: "",
+};
+
 export default {
     name: "IssuesListItem",
 
@@ -54,7 +59,7 @@ export default {
         this.visible = !this.visible;
       },
       visibilitySymbol: function () {
-        return !this.visible && "[+]" || "[-]"
+        return !this.visible && symbols.expand || symbols.collapse
       }
     },
 }
