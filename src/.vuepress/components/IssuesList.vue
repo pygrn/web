@@ -40,10 +40,14 @@ export default {
         */
         const {github} = this;
 
+        const githubParams = {
+         // state: 'closed',
+         sort: 'created',
+         direction: 'desc',
+       }
+
         axios.get(`https://api.github.com/repos/${github.organization}/${github.repo}/issues`, {
-          params: {
-            type: 'all',
-          },
+          params: {...githubParams, ...github.params},
         })
         .then(response => {
           this.issues = response["data"];
