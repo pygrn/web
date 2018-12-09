@@ -1,13 +1,17 @@
 <template>
+
 <div>
-  <h2>
-      <a target="_blank" :href="html_url" >{{ title }}</a>
+  <h2 @click="toggleVisibility()">
+      <a>{{visibilitySymbol()}} {{ title }}</a>
   </h2>
 
-  <p v-html="markdown(body)"></p>
+  <div class="collapsed" v-show="visible">
+    <p v-html="markdown(body)"></p>
 
-  <p><a target="_blank" :href="html_url">Més informació</a></p>
+    <p><a target="_blank" :href="html_url">Més informació</a></p>
+  </div>
 </div>
+
 </template>
 
 <script>
@@ -19,6 +23,7 @@ export default {
 
     data() {
       return {
+        visible: !this.hidden,
       }
     },
 
@@ -35,12 +40,28 @@ export default {
         type: String,
         required: true,
       },
+      hidden: {
+        type: Boolean,
+        required: false,
+        default: true,
+      },
     },
 
     methods: {
       markdown: function (content) {
         return md.render(content);
+      },
+      toggleVisibility() {
+        this.visible = !this.visible;
+      },
+      visibilitySymbol: function () {
+        return !this.visible && "[+]" || "[-]"
       }
     },
 }
 </script>
+
+
+<style>
+
+</style>
