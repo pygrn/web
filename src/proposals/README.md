@@ -17,7 +17,7 @@ Abans de cada data de trobada s'escull la proposta més adient, tenint en compte
 
 Només cal que preparis una [nova issue](https://github.com/pygrn/xerrades/issues/new) mantenint el següent format:
 
-<FileContent
+<file-content
   v-bind:github="{organization:'pygrn', repo:'xerrades', path: '.github/ISSUE_TEMPLATE.md'}"
 />
 
@@ -39,7 +39,7 @@ Concretament fem una reacció `+1` (:+1:) al missatge base de la `issue`:
 
 ## Últimes propostes publicades
 
-<IssuesList
+<issues-list
   :limit=0
   emptyMessage="No s'ha trobat cap proposta pendent"
   v-bind:github="{organization:'pygrn', repo:'xerrades', params:{state: 'open'}}"
@@ -47,7 +47,7 @@ Concretament fem una reacció `+1` (:+1:) al missatge base de la `issue`:
 
 ## Propostes tancades
 
-<IssuesList
+<issues-list
   :limit=0
   emptyMessage="No s'ha trobat cap proposta tancada"
   v-bind:github="{organization:'pygrn', repo:'xerrades', params:{state: 'closed'}}"

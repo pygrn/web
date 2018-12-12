@@ -7,7 +7,7 @@ is_index: true
 
 <!-- <JobsIndex :limit=3 /> -->
 
-<IssuesList
+<issues-list
   :limit=0
   emptyMessage="No s'ha trobat cap procés de selecció obert"
   v-bind:github="{organization:'pygrn', repo:'feina', params:{state: 'open'}}"
@@ -17,7 +17,7 @@ is_index: true
 
 Només cal que preparis una [nova issue](https://github.com/pygrn/feina/issues/new) mantenint el següent format:
 
-<FileContent
+<file-content
   v-bind:github="{organization:'pygrn', repo:'feina', path: '.github/ISSUE_TEMPLATE.md'}"
 />
 
