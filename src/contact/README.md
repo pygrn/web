@@ -18,7 +18,7 @@ Ens trobaràs a qualsevol dels següents canals:
 - [Web](http://pythongirona.cat)
 
 
-## Amb els suport de
+## Amb el suport de
 
 Tot això és possible gràcies a:
 
