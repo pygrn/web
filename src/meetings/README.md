@@ -28,12 +28,21 @@ Uns dies abans de cada sessió confirmem la sala / aula on veure'ns, normalment 
 
 ## Històric de Trobades
 
-- [12/07/2017 - PyGRN#1](https://github.com/pygrn/xerrades/tree/master/xerrades/2017/20170712) **Scrapy + Pandas**
-- [13/09/2017 - PyGRN#2](https://github.com/pygrn/xerrades/tree/master/xerrades/2017/20170913) **No tot és programar**
-- [18/10/2017 - PyGRN#3](https://github.com/pygrn/xerrades/tree/master/xerrades/2017/20171018) **Python Data Science**
-- [15/11/2017 - PyGRN#4](https://github.com/pygrn/xerrades/tree/master/xerrades/2017/20171115) **Django APP&API + React client**
-- [17/01/2018 - PyGRN#5](https://github.com/pygrn/xerrades/tree/master/xerrades/2018/20180117) **Elastic Search**
-- [21/02/2018 - PyGRN#6](https://github.com/pygrn/xerrades/tree/master/xerrades/2018/20180221) **Taller sCMS #WIP**
-- [20/06/2018 - PyGRN#7] **Taller Ansible**
-- [27/09/2018 - PyGRN#8] **Locust**
-- [18/10/2018 - PyGRN#9](https://github.com/pygrn/xerrades/tree/master/xerrades/2018/20181018) **Docker 101**
+- 18/10/2018 - PyGRN#9
+  - [**Docker 101**](https://github.com/pygrn/xerrades/tree/master/xerrades/2018/20181018)
+- 27/09/2018 - PyGRN#8
+  - **Locust**
+- 20/06/2018 - PyGRN#7
+  - **Taller Ansible**
+- 21/02/2018 - PyGRN#6
+  - [**Taller sCMS #WIP**](https://github.com/pygrn/xerrades/tree/master/xerrades/2018/20180221)
+- 17/01/2018 - PyGRN#5
+  - [**Elastic Search**](https://github.com/pygrn/xerrades/tree/master/xerrades/2018/20180117)
+- 15/11/2017 - PyGRN#4
+  - [**Django APP&API + React client**](https://github.com/pygrn/xerrades/tree/master/xerrades/2017/20171115)
+- 18/10/2017 - PyGRN#3
+  - [**Python Data Science**](https://github.com/pygrn/xerrades/tree/master/xerrades/2017/20171018)
+- 13/09/2017 - PyGRN#2
+  - [**No tot és programar**](https://github.com/pygrn/xerrades/tree/master/xerrades/2017/20170913)
+- 12/07/2017 - PyGRN#1
+  - [**Scrapy + Pandas**](https://github.com/pygrn/xerrades/tree/master/xerrades/2017/20170712)
