@@ -28,6 +28,10 @@ Uns dies abans de cada sessió confirmem la sala / aula on veure'ns, normalment 
 
 ## Històric de Trobades
 
+- 13/12/2018 - PyGRN#11
+  - **Taller introducció a VueJS**
+- 15/11/2018 - PyGRN#10
+  - **Pentesting emprant Python**
 - 18/10/2018 - PyGRN#9
   - [**Docker 101**](https://github.com/pygrn/xerrades/tree/master/xerrades/2018/20181018)
 - 27/09/2018 - PyGRN#8
