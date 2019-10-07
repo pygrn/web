@@ -32,16 +32,24 @@ Uns dies abans de cada sessió confirmem la sala / aula on veure'ns, normalment 
 
 ## Històric de Trobades
 
+- 11/04/2019 - PyGRN#15
+  - [**Kubernetes 101**](https://github.com/pygrn/xerrades/tree/master/xerrades/2019/20190926)
+- 11/04/2019 - PyGRN#14
+  - [**GraphQL**](https://github.com/pygrn/xerrades/tree/master/xerrades/2019/20190411)
+- 07/03/2019 - PyGRN#13
+  - [**Taller de Docker**](https://github.com/pygrn/xerrades/tree/master/xerrades/2019/20190307)
+- 07/02/2019 - PyGRN#12
+  - [**Scientific Python**](https://github.com/pygrn/xerrades/tree/master/xerrades/2019/20190207)
 - 13/12/2018 - PyGRN#11
-  - **Taller introducció a VueJS**
+  - [**Taller introducció a VueJS**](https://github.com/pygrn/xerrades/tree/master/xerrades/2018/20181213)
 - 15/11/2018 - PyGRN#10
-  - **Pentesting emprant Python**
+  - [**Pentesting emprant Python**](https://github.com/pygrn/xerrades/tree/master/xerrades/2018/20181115)
 - 18/10/2018 - PyGRN#9
   - [**Docker 101**](https://github.com/pygrn/xerrades/tree/master/xerrades/2018/20181018)
 - 27/09/2018 - PyGRN#8
-  - **Locust**
+  - [**Locust**](https://github.com/pygrn/xerrades/tree/master/xerrades/2018/20180927)
 - 20/06/2018 - PyGRN#7
-  - **Taller Ansible**
+  - [**Taller Ansible**](https://github.com/pygrn/xerrades/tree/master/xerrades/2018/20180620)
 - 21/02/2018 - PyGRN#6
   - [**Taller sCMS #WIP**](https://github.com/pygrn/xerrades/tree/master/xerrades/2018/20180221)
 - 17/01/2018 - PyGRN#5
