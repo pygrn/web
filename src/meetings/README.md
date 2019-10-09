@@ -32,7 +32,7 @@ Uns dies abans de cada sessió confirmem la sala / aula on veure'ns, normalment 
 
 ## Històric de Trobades
 
-- 11/04/2019 - PyGRN#15
+- 26/09/2019 - PyGRN#15
   - [**Kubernetes 101**](https://github.com/pygrn/xerrades/tree/master/xerrades/2019/20190926)
 - 11/04/2019 - PyGRN#14
   - [**GraphQL**](https://github.com/pygrn/xerrades/tree/master/xerrades/2019/20190411)
